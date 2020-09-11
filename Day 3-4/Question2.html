@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+<form>
+<input type="text" name="shippingname"><br>
+<input type="checkbox" name="billingtoo" onclick="FillBilling(this.form)"><br>
+<input type="text" name="billingname"><br>
+</form>
+<script>
+   function FillBilling(f) {
+  if(f.billingtoo.checked == true) {
+    f.billingname.value = f.shippingname.value;
+    f.billingcity.value = f.shippingcity.value;
+  }
+}
+
+</script>
+</body>
+</html>

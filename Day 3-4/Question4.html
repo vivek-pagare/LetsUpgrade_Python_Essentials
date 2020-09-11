@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript console.log() Method</h1>
+
+
+<script>
+
+function All(arr) {
+    console.log('all objects')
+    arr.forEach(element => {
+        console.log(element)
+    });
+}
+
+function Age(arr) {
+    console.log('objects having age less than 30')
+    arr.forEach(element => {
+        if(element.age < 30) {
+            console.log(element)
+        }
+    });
+}
+
+function Country(arr) {
+    console.log('Objects having country india')
+    arr.forEach(element => {
+        if(element.country === 'India') {
+            console.log(element)
+        }
+    });
+}
+
+arr = [
+    {
+        name: 'Atul',
+        age: 26,
+        country: 'India',
+        hobbies: ['milk products','movies','food']
+    },
+    {
+        name: 'Pratik',
+        age: 25,
+        country: 'India',
+        hobbies: ['trekking','movies','food']
+    },
+    {
+        name: 'Vivek',
+        age: 31,
+        country: 'India',
+        hobbies: ['reading','movies','coffee']
+    },
+
+];
+
+All(arr);
+
+Age(arr);
+
+Country(arr);
+
+</script>
+
+</body>
+</html>
+
